@@ -1,7 +1,7 @@
 import os
 import time
 import random
-from DroneTrafficManagement_2by2 import Drone, DroneGrid
+from QuantumDroneTrafficManagement_2by2 import Drone, DroneGrid
 import perceval as pcvl
 
 def clear_console():
