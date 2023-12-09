@@ -1,5 +1,3 @@
-import random
-
 class DroneGrid:
     def __init__(self, rows, cols):
         self.rows = rows
