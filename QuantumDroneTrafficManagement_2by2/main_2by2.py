@@ -1,6 +1,5 @@
 import os
 import time
-import random
 from QuantumDroneTrafficManagement_2by2 import Drone, DroneGrid
 import perceval as pcvl
 
@@ -35,6 +34,11 @@ def display_grid_and_last_move(grid, drones):
         last_move = drone.get_last_move()
         print(f'Last Move of {drone.name}: {last_move}')
 
+def countdown_timer(seconds):
+    for i in range(seconds, 0, -1):
+        print(f"Next move in {i} seconds.", end="\r")
+        time.sleep(1)
+
 def main():
     
     #UI INIT
@@ -60,7 +64,7 @@ def main():
         while True:
             move_drones(grid, drones, sampler)
             display_grid_and_last_move(grid, drones)
-            time.sleep(3)
+            countdown_timer(3)
     except KeyboardInterrupt:
         print("\nScript interrupted.")
 
