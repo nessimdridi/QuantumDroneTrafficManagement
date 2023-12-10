@@ -1,6 +1,6 @@
 # Quantum Drone Traffic Management
 
-A solution to a small drone traffic management problem using the Perceval software by Quandela. The program simulates two drones (`Drone A` and `Drone B`) navigating on a 2 by 2 grid, with the objective of avoiding collisions. The movement of both drones is visible in a command line interface.
+A solution to a small drone traffic management problem using the Perceval software by Quandela. The program simulates two drones (`Drone A` and `Drone B`) navigating on a 2 by 2 grid, with the objective of avoiding collisions. The movement of both drones is visible in a command line interface. 
 
 A pair of entangled photons is used as input for an an optical quantum circuit. Then, the drones execute measurements on this circuit and the outcomes determine their subsequent movements, so they move either vertically or horizontally. The entanglement of the input photons ensures that the drones never collide!
 
