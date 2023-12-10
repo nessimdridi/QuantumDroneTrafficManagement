@@ -42,6 +42,8 @@ class DroneGrid:
     def display_grid(self):
         for row in self.grid:
             print('[{}] [{}]'.format(*row))
+        
+        print("")
 
     def is_drone(self, row, col):
         return self.grid[row][col] != ' ' if 0 <= row < self.rows and 0 <= col < self.cols else False

@@ -33,10 +33,12 @@ def display_grid_and_last_move(grid, drones):
     for drone in drones:
         last_move = drone.get_last_move()
         print(f'Last Move of {drone.name}: {last_move}')
+    
+    print("")
 
 def countdown_timer(seconds):
     for i in range(seconds, 0, -1):
-        print(f"Next move in {i} seconds.", end="\r")
+        print(f"    --> Next move in {i} seconds.", end="\r")
         time.sleep(1)
 
 def main():
